@@ -1,19 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#c5ab9f"
+    android:layout_gravity="center">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zamów swoją kawę!"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#40FFFFFF"
+        android:layout_gravity="center">
+
+            <RadioGroup
+                android:id="@+id/coffee_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <RadioButton
+                    android:id="@+id/black_coffe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Czarna kawa"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:id="@+id/coffee_with_milk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kawa z mlekiem"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:id="@+id/season_coffee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kawa sezonowa"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
