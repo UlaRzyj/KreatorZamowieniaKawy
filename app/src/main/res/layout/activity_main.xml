@@ -40,24 +40,45 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Czarna kawa"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
                 <RadioButton
                     android:id="@+id/coffee_with_milk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Kawa z mlekiem"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
                 <RadioButton
                     android:id="@+id/season_coffee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Kawa sezonowa"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
             </RadioGroup>
 
     </androidx.cardview.widget.CardView>
 
+    <CheckBox
+        android:id="@+id/sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Czy chcesz dodatkowy cukier?"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"/>
 
+    <CheckBox
+        android:id="@+id/milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czy chcesz dodatkowe mleko?"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"/>
 
 
 </LinearLayout>
